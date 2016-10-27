@@ -1,0 +1,650 @@
+/***********
+
+ * 页面样式
+
+ ***********/
+
+/* ===========
+
+   基本默认值
+
+   =========== */
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* ===========
+
+   工具样式
+
+   =========== */
+
+.center-block{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.pull-left{
+    float: left !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.text-hide{
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* ============
+
+   浏览器版本过低更新提示
+
+   ============ */
+
+.browserupgrade{
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    background: #ffffcc;
+}   
+.browserupgrade a{
+    color: #19B519;
+}
+
+/* =============
+
+   自定义页面样式
+
+   ============= */
+
+body{
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+a:hover, a:active{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/* 网站头部 */
+
+header{
+    width: 100%;
+}
+.top-nav{
+    line-height: 3rem;
+    background-color: #555;
+    color: #fff;
+}
+.top-nav .tel{
+    float: left;
+    padding-left: 1.5rem;
+}
+.top-nav ul{
+    text-align: right;
+}
+.top-nav ul li{
+    display: inline-block;
+}
+.top-nav li + li{
+    border-left: 1px solid #999;
+    margin-left: -6px;
+}
+.top-nav ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+.main-nav .brand{
+    float: left;
+    padding: 1rem 1.5rem;
+}
+.main-nav ul{
+    text-align: right;
+}
+.main-nav ul li{
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+.main-nav ul li a{
+    display: inline-block;
+    padding: 0 2.5rem;
+    line-height: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7c7a65;
+    text-decoration: none;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a:active{
+    color: #ffb300;
+    background-color: #f8f6f1;
+}
+
+@media only screen and (max-width: 50em){
+    .top-nav ul li a{
+        padding: 0 .8rem;
+    }
+    .main-nav .brand{
+        float: none;
+        display: block;
+        padding: 1rem 0 0;
+        text-align: center;
+    }
+    .main-nav ul{
+        text-align: center;
+    }
+    .main-nav ul li{
+        border: none;
+    }
+    .main-nav ul li a{
+        padding: 0 .8rem;
+    }
+}
+@media only screen and (max-width: 30em){
+    .top-nav .tel,
+    .top-nav ul li:nth-child(3),
+    .top-nav ul li:nth-child(4),
+    .main-nav ul li:first-child{
+        display: none;
+    }
+    .main-nav ul li{
+        border: none;
+    }
+    .main-nav ul li a{
+        padding: .3rem;
+        line-height: 3.5rem;
+    }
+}
+
+/* 网站主要内容 */
+
+.container{
+    width: 100%;
+}
+.transaction{
+    background-color: #7c7365;
+}
+.trans-content{
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.trans-data{
+    float: left;
+    text-align: left;
+}
+.trans-data p{
+    display: inline-block;
+    margin:  1rem;
+}
+.trans-money{
+    margin: 1rem;
+    padding: 0 1rem;
+    color: #ff9900;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 3px;
+    box-shadow: 1px 2px 1px #333 inset;
+}
+.trans-report{
+    padding: 1rem;
+    text-align: right;
+}
+.trans-report a{
+    display: inline-block;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.ad .banner{
+    cursor: pointer;
+}
+.feature{
+    width: 100%;
+    margin: .6rem auto;
+    font-size: 0;
+}
+.feature .sad{
+    width: 90%;
+    margin: 0 auto;
+}
+.saf{
+    display: inline-block;
+    width: 32.52%;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+.saf + .saf{
+    margin-left: 1.2%;
+}
+.saf h3{
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+    font-size: 3.3rem;
+    color: #ff9900;
+    
+}
+.saf p{
+    display: inline-block;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+.notice{
+    width: 90%;
+    margin: 2rem auto;
+    line-height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+.dn:before{
+    margin-left: 2rem;
+    content: "最新公告：\00a0\00a0";
+    color: #aaa;
+}
+.notice .dn{
+    float: left;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.notice span{
+    margin-right: .5rem;
+    color: #999;
+    font-size: 1.2rem;
+}
+.notice .not-more{
+    width: 28%;
+    display: inline-block;
+    text-align: right;
+}
+.notice .not-more>a{
+    color: #ff9900;
+}
+
+.product{
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #e8e8e8;
+    border-top: 3px solid #ff9900;
+    box-shadow: 0 0 4px #ccc;
+}
+.pro-syn{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.pro-syn h2{
+    padding: 3rem 0 1.2rem;
+}
+.pro-syn em{
+    display: block;
+    margin-top: .5rem;
+}
+.pro-main{
+    width: 80%;
+    margin-left: 20%;
+    padding: .6rem 0 1rem;
+    background-color: #fff;
+}
+.pro-content > p{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+.pro-content > p em{
+    font-size: 2.4rem;
+    font-style: normal;
+
+}
+.pro-content .info{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.pro-content .info p{
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+}
+.info p span{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: #ff9900;
+}
+.info p span i{
+    font-size: 1rem;
+    color: #999;
+}
+.pro-content input{
+    width: 14%;
+    height: 3rem;
+    margin-left: 0.6rem;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #F3960D;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+.pro-content input.idis{
+    background-color: #b1b1b1;
+}
+.pro-content input:hover{
+    background-color: rgba(243,150,12,0.8);
+}
+.pro-content input.idis:hover{
+    background-color: #b1b1b1;
+}
+
+.more{
+    width: 100%;
+    background-color: #fff;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+.more-content{
+    width: 90%;
+    margin: 0 auto;
+}
+.more-content .brand{
+    display: inline-block;
+    width: 20%;
+    height: 35px;
+    text-indent: -999px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background: url(../img/logo@1x.png) no-repeat;
+}
+.more-content ul{
+    display: inline-block;
+    width: 15%;
+    margin: .6rem 0 2rem 0;
+    vertical-align: top;
+}
+.more-content ul li{
+    padding: .1rem;
+    font-weight: normal;
+}
+.more-content ul li:first-child{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 50em){
+    .trans-content{
+        max-width: 98%;
+        margin-left: 1.2rem;
+        font-size: 1.2rem;
+    }
+    .trans-data p{
+        margin: 0;
+        padding: 1.4rem 0;
+    }
+    .trans-money{
+        margin: 0;
+        padding: 0 .6rem;
+        font-size: 1.6rem;
+        background-color: #7c7365;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .product{
+        margin: 1rem auto;
+    }
+    .pro-syn{
+        float: none;
+        width: 100%;
+    }
+    .pro-syn h2{
+        margin-bottom: .6rem;
+        padding: 0;
+    }
+    .pro-syn em{
+        display: inline-block;
+        margin: 0 0 1rem;
+    }
+    .pro-main{
+        width: 100%;
+        margin: 0;
+    }
+    .pro-content p > i{
+        display: block; 
+    }
+    .more-content .brand{
+        display: none;
+    }
+    .more-content ul{
+        width: 18%;
+       
+    }
+}
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+    .feature .saf{
+        width: 31.8%;
+        padding: 0 0 .8rem;
+    }
+    .feature .saf + .saf{
+        margin-left: 2.2%;
+    }
+    .feature .saf h3{
+        width: 100%;
+        text-align: center;
+    }
+    .feature .saf p{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 30em){
+    .trans-data{
+        float: none;
+        text-align: center;
+    }
+    .trans-data p{
+        display: block;
+        padding: 1rem 0 0;
+    }
+    .trans-report{
+        padding: .6rem;
+        text-align: center;
+    }
+    .feature .sad{
+        width: 96%;
+    }
+    .feature .saf{
+        display: block;
+        width: 100%;
+        padding: .6rem 0;
+        font-size: 1.2rem;
+    }
+    .feature .saf + .saf{
+        margin: 1rem 0 0;
+    }
+    .saf h3{
+        font-size: 3rem;
+    }
+    .notice{
+        width: 96%;
+        margin: 1.6rem auto;     
+    }
+    .notice:before{
+        margin-left: .6rem; 
+    }
+    .notice span{
+        display: none;
+    }
+    .pro-main{
+        padding: 0 0 1rem;
+    }
+    .product{
+        width: 96%;
+    }
+    .pro-content{
+        padding: .6rem;
+    }
+    .pro-content > p{
+        width: 28%;
+        margin: .2rem 0 1rem;
+    }
+    .pro-content > p em{
+        font-size: 1.8rem;
+    }
+    .pro-content .info{
+        width: 70%;
+        padding: .6rem 0 .6rem;
+    }
+    .pro-content .info p{
+        margin: .2rem 0 .6rem;
+    }
+    .pro-content input{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .info p span{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .more{
+        margin-bottom: 1.6rem;
+    }
+    .more-content{
+        width: 96%;
+    }
+}
+
+/* 底部导航 */
+
+footer{
+    width: 100%;
+    padding: 3rem 0 3rem;
+    background-color: #ededed;
+}
+footer ul li{
+    display: inline-block;    
+}
+footer ul li .icon{
+    display: inline-block;
+    text-indent: -999rem;
+    margin-right: 1.5rem;
+    background: url(../img/cert1.png) no-repeat;
+    background-size: 466px 447px;
+    overflow: hidden;
+}
+footer ul li .icona{
+    width: 38px;
+    height: 27px;
+    background-position: -369px -45px;
+}
+footer ul li .iconb{
+    width: 78px;
+    height: 27px;
+    background-position: -110px -96px;
+}
+footer ul li .iconc{
+    width: 36px;
+    height: 27px;
+    background-position: -426px -90px;
+}
+footer ul li .icond{
+    width: 63px;
+    height: 27px;
+    margin-right: 13px;
+    background-position: -401px -186px;
+}
+footer ul li .icone{
+    width: 22px;
+    height: 27px;
+    background-position: -48px -48px;
+}
+footer ul li .iconf{
+    width: 75px;
+    height: 27px;
+    background-position: 0 -320px;
+}
+footer ul li .icong{
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    background: url(../img/cert2.png) no-repeat;
+    background-size: 28px;
+}
+footer p{
+    padding-top: 2rem;
+    color: #807D7D;
+}
